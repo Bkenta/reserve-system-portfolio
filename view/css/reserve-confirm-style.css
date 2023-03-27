@@ -1,0 +1,68 @@
+/******************************/
+/*      予約情報入力ページ     */
+/******************************/
+/* 共通 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-confirm-wrapper__date,
+div.reserve-confirm-wrapper__order-times,
+div.reserve-confirm-wrapper__person-num,
+div.reserve-confirm-wrapper__person-name, 
+div.reserve-confirm-wrapper__person-tel, 
+div.reserve-confirm-wrapper__person-email {
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 1%;
+    border-bottom: 1px solid ;
+}
+
+div.reserve-confirm-wrapper__date > p:first-child,
+div.reserve-confirm-wrapper__order-times > p:first-child,
+div.reserve-confirm-wrapper__person-num > p:first-child, 
+div.reserve-confirm-wrapper__person-name > p:first-child, 
+div.reserve-confirm-wrapper__person-tel > p:first-child, 
+div.reserve-confirm-wrapper__person-email > p:first-child {
+    grid-column: 2/6;
+}
+
+div.reserve-confirm-wrapper__date > div,
+div.reserve-confirm-wrapper__order-times > div,
+div.reserve-confirm-wrapper__person-num > p:last-child, 
+div.reserve-confirm-wrapper__person-name > p:last-child, 
+div.reserve-confirm-wrapper__person-tel > p:last-child, 
+div.reserve-confirm-wrapper__person-email > p:last-child  {
+    grid-column: 7/11;
+}
+
+
+/* フォーム */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-confirm-wrapper > form {
+    margin-bottom: 5%;
+}
+
+/* 希望日 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-confirm-wrapper__date {
+    border-top: 1px solid;
+}
+
+
+/* 確認ボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+button.reserve-confirm-wrapper__btn {
+    margin-top: 5%;
+    
+}
+
+/* リンク */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-confirm-btn {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+div.reserve-confirm-btn > a:first-child {
+    grid-column: 2/7;
+}
+
+div.reserve-confirm-btn > a:last-child {
+    grid-column: 7/11;
+}

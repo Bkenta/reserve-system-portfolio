@@ -1,0 +1,95 @@
+/*********************************/
+/*      新規会員情報入力ページ     */
+/*********************************/
+
+/* タイトル */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.registration-page-title > h1{
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+/* 会員情報入力フォーム */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.registration-form {
+    margin-bottom: 1%;
+}
+
+.registration-form__area {
+    grid-template-columns: 30% 40%;
+    grid-gap: 3% 0%;
+    margin-bottom: 7%;
+}
+
+/* 年齢 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.registration-form__area__age {
+    grid-template-columns: 30% 20%;
+}
+
+/* 電話番号 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.registration-form__area__tel {
+    grid-template-columns: 33% 33% 33%;
+}
+
+/* 各要素 */
+.registration-form__area__tel__element {
+    grid-template-columns: 80% 20%;
+}
+
+
+/*********************************/
+/*      新規会員情報確認ページ     */
+/*********************************
+
+/* タイトル */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.registration-confirm-page-title > h3{
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+/* 会員情報入力フォーム */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.registration-confirm-form__wrapper {
+    grid-template-columns: 35% 65%;
+    grid-gap: 3% 0%;
+    margin-bottom: 7%;
+    width: 50%;
+}
+
+/* 電話番号 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+    .registration-confirm-form__wrapper__tel {
+        grid-template-columns: repeat(5,1fr);
+    }
+    /* 各要素 */
+    .registration-confirm-form__wrapper__tel__element {
+        grid-template-columns: 80% 20%;
+    }
+
+/* ボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.registration-confirm-form__btn{
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.registration-confirm-form__btn__confirm{
+    grid-column: 8/10;
+}
+.registration-confirm-form__btn__back-to-inputform{
+    grid-column: 10/14;
+}
+
+
+/*********************************/
+/*      新規会員登録成功ページ     */
+/*********************************/
+
+/* タイトル */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.registrationsuccess-page-title > h1{
+    margin-top: 4%;
+    margin-bottom: 1%;
+}

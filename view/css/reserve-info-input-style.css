@@ -1,0 +1,61 @@
+/******************************/
+/*      予約情報入力ページ     */
+/******************************/
+/* 共通 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-info-input-wrapper__date,
+div.reserve-info-input-wrapper__order-times,
+div.reserve-info-input-wrapper__person-num,
+div.reserve-info-input-wrapper__person-name, 
+div.reserve-info-input-wrapper__person-tel, 
+div.reserve-info-input-wrapper__person-email {
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 1%;
+    border-bottom: 1px solid ;
+}
+
+div.reserve-info-input-wrapper__date > p:first-child,
+div.reserve-info-input-wrapper__order-times > p:first-child,
+div.reserve-info-input-wrapper__person-num > p:first-child, 
+div.reserve-info-input-wrapper__person-name > p:first-child, 
+div.reserve-info-input-wrapper__person-tel > p:first-child, 
+div.reserve-info-input-wrapper__person-email > p:first-child {
+    grid-column: 2/6;
+}
+
+div.reserve-info-input-wrapper__date > div,
+div.reserve-info-input-wrapper__order-times > div,
+div.reserve-info-input-wrapper__person-num > p:last-child, 
+div.reserve-info-input-wrapper__person-name > p:last-child, 
+div.reserve-info-input-wrapper__person-tel > p:last-child, 
+div.reserve-info-input-wrapper__person-email > p:last-child  {
+    grid-column: 7/11;
+}
+
+
+/* フォーム */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-info-input-wrapper > form {
+    margin-bottom: 5%;
+}
+
+/* 希望日 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-info-input-wrapper__date {
+    border-top: 1px solid;
+}
+
+/* リンク */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-info-input-wrapper__btn {
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 5%;
+}
+
+div.reserve-info-input-wrapper__btn > button:first-child {
+    grid-column: 4/7;
+}
+
+div.reserve-info-input-wrapper__btn > button:last-child {
+    grid-column: 7/10;
+}

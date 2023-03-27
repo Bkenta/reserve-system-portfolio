@@ -1,0 +1,105 @@
+/******************************/
+/*      予約内容確認ページ     */
+/******************************/
+/* 共通 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper__date,
+div.reserve-condition-wrapper__order-times,
+div.reserve-condition-wrapper__person-num,
+div.reserve-condition-wrapper__person-name, 
+div.reserve-condition-wrapper__person-tel, 
+div.reserve-condition-wrapper__person-email {
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 1%;
+    border-bottom: 1px dashed #f38989;
+}
+
+div.reserve-condition-wrapper__date > p:first-child,
+div.reserve-condition-wrapper__order-times > p:first-child,
+div.reserve-condition-wrapper__person-num > p:first-child, 
+div.reserve-condition-wrapper__person-name > p:first-child, 
+div.reserve-condition-wrapper__person-tel > p:first-child, 
+div.reserve-condition-wrapper__person-email > p:first-child {
+    grid-column: 2/6;
+}
+
+div.reserve-condition-wrapper__date > div,
+div.reserve-condition-wrapper__order-times > div,
+div.reserve-condition-wrapper__person-num > p:last-child, 
+div.reserve-condition-wrapper__person-name > p:last-child, 
+div.reserve-condition-wrapper__person-tel > p:last-child, 
+div.reserve-condition-wrapper__person-email > p:last-child  {
+    grid-column: 7/11;
+}
+
+
+/* フォント */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper__person-num  input, 
+div.reserve-condition-wrapper__person-tel input, 
+div.reserve-condition-wrapper__person-email input {
+    font-size: 1rem;
+}
+
+
+/* 予約枠ごとの行 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper__box {
+    grid-template-columns: 2fr 8fr;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+}
+
+/* 予約日 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper__date {
+    font-weight: bold;
+    background-color: #f38989;
+}
+
+
+/* 利用人数 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper__person-num input,
+div.reserve-condition-wrapper__person-num > p:last-child{
+    width: 50%;
+}
+
+
+/* inputフォーム */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper input {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+/* ラジオボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper input[type="radio"] {
+    transform: scale(1.3);
+}
+
+
+/* 確認ボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper__btn {
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 1%;
+}
+
+div.reserve-condition-wrapper__btn > button:first-child {
+    grid-column: 4/7;
+}
+
+div.reserve-condition-wrapper__btn > button:last-child {
+    grid-column: 7/10;
+}
+
+/* フォーム全体 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-condition-wrapper > form {
+    margin-bottom: 5%;
+}
+

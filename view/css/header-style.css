@@ -1,0 +1,86 @@
+/********************/
+/*      ヘッダー     */
+/********************/
+
+/* セクション全体 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.header-section {
+    grid-template-columns: 2.5fr 4fr 3fr 0.1fr;
+    border-bottom: 10px double #FF6666;
+}
+
+/* サイトタイトル */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.header-section__title {
+    margin-left: 4%;
+    text-align: left;
+}
+
+div.header-section__title > a {
+    grid-template-columns: 30% 70%;
+    grid-template-columns: repeat(10, 1fr);
+    text-decoration: none;
+}
+
+div.header-section__title > a > img {
+    grid-column: 1/3;
+    width: 100%;
+}
+
+div.header-section__title > a > p {
+    grid-column: 3/9;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FF6666;
+    margin: 12% 0 0 4%;
+}
+
+/* ボタンエリア */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.header-section__btn-area {
+    grid-template-columns: 50% 50%;
+    grid-column: 3/4;
+}
+
+    /* 予約ボタン */
+    /* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+    /* ボタン */
+    div.header-section__btn-area__reserve-btn {
+        position: relative;
+        grid-template-columns: 1.5fr 1.5fr 0fr;
+        align-items: center;
+        width: 40%;
+        height: 40px;
+        background-color: #FF6666;
+    }
+
+    /* 画像 */
+    div.header-section__btn-area__reserve-btn > img {
+        width: 55%;
+    }
+
+    /* 予約確認ボタン */
+    /* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+    /* ボタン */
+    div.header-section__btn-area__reserve-condition-btn {
+        position: relative;
+        margin-right: 10%;
+        grid-template-columns: 3fr 1.3fr 0fr;
+        width: 80%;
+        height: 40px;
+        background-color: #66B2FF;
+    }
+
+    /* 両ボタン共通 */
+    /* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+    /* リンク */
+    div.header-section__btn-area__reserve-btn > a,
+    div.header-section__btn-area__reserve-condition-btn > a {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;    
+        text-decoration: none;
+    } 

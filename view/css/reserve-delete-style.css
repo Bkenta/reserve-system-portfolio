@@ -1,0 +1,68 @@
+/***********************************/
+/*      予約内容キャンセルページ     */
+/**********************************/
+/* 共通 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-delete-wrapper__date,
+div.reserve-delete-wrapper__order-times,
+div.reserve-delete-wrapper__person-num,
+div.reserve-delete-wrapper__person-name, 
+div.reserve-delete-wrapper__person-tel, 
+div.reserve-delete-wrapper__person-email {
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 1%;
+    border-bottom: 1px solid ;
+}
+
+div.reserve-delete-wrapper__date > p:first-child,
+div.reserve-delete-wrapper__order-times > p:first-child,
+div.reserve-delete-wrapper__person-num > p:first-child, 
+div.reserve-delete-wrapper__person-name > p:first-child, 
+div.reserve-delete-wrapper__person-tel > p:first-child, 
+div.reserve-delete-wrapper__person-email > p:first-child {
+    grid-column: 2/6;
+}
+
+div.reserve-delete-wrapper__date > p:last-child,
+div.reserve-delete-wrapper__order-times > div,
+div.reserve-delete-wrapper__person-num > p:last-child, 
+div.reserve-delete-wrapper__person-name > p:last-child, 
+div.reserve-delete-wrapper__person-tel > p:last-child, 
+div.reserve-delete-wrapper__person-email > p:last-child  {
+    grid-column: 7/11;
+}
+
+/* フォーム */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-delete-wrapper > form {
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+/* 希望日 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-delete-wrapper__date {
+    border-top: 1px solid;
+}
+
+/* ボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+button.reserve-delete-wrapper__btn {
+    margin-top: 5%;
+}
+
+
+/* リンク */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.reserve-delete-wrapper__btn {
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 3%;
+}
+
+div.reserve-delete-wrapper__btn > button:first-child {
+    grid-column: 4/7;
+}
+
+div.reserve-delete-wrapper__btn > button:last-child {
+    grid-column: 7/10;
+}

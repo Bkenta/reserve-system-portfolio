@@ -1,0 +1,94 @@
+/**************************/
+/*      カレンダー本体     */
+/*************************/
+/* 説明文 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+p.calender-lead-text {
+    margin-bottom: 1%;
+}
+
+/* カレンダー全体 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.calender {
+    width: 100%;
+    /* height: 800px; */
+    margin: 0 auto;
+}
+
+/* 年月 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.month-year-ja > span.year,
+div.month-year-ja > span.month {
+    font-size: 2rem;
+}
+
+div.month-year-ja > span:nth-child(2n){
+    font-size: 1.3rem;
+}
+
+
+/* 曜日 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.calender-body__header {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 40px;
+    border-top: 3px solid #66B2FF;
+    border-bottom: 3px solid #66B2FF;
+}
+
+div.calender-body__header > p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* 日付 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.calender-body__daily-element {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 60px);
+    margin-bottom: 2%;
+    border-bottom: 3px solid #66B2FF;
+}
+
+div.calender-body__daily-element > p > button {
+    border: none;
+    font-size: 1.3rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* 前月・翌月ボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.prev-next-btn-area {
+    grid-template-columns: repeat(11, 2fr);
+    margin-bottom: 5%;
+}
+
+/* 前月ボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+    div.prev-change-btn {
+        grid-column: 4/6;
+    }
+
+    div.prev-change-btn__in-form {
+        grid-template-columns: 2fr 1fr;
+    }
+
+/* 翌月ボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+    div.next-change-btn {
+        grid-column: 7/9;
+    }
+
+    div.next-change-btn__in-form {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    div.next-change-btn__in-form > button,
+    div.prev-change-btn__in-form > button {
+        font-size: 2rem;
+        border: none;
+        background-color: transparent;
+    }

@@ -1,0 +1,4 @@
+.htaccess
+.htpasswd
+.vscode
+/app/functions/const.php

@@ -1,0 +1,255 @@
+
+/*****************/
+/*      共通     */
+/****************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F7F7F7;
+    height: 100vh;
+}
+
+/*********************/
+/*      書式設定     */
+/********************/
+.opasity-5 {
+    opacity: 0.5;
+}
+
+.text-color-white {
+    color: white;
+}
+
+/************************/
+/*      グリッド設定     */
+/************************/
+.disp-grid {
+    display: grid;
+}
+
+.grid-just-center {
+    justify-items: center;
+}
+
+.grid-just-right {
+    justify-items: right;
+}
+
+.grid-just-left {
+    justify-items: left;
+}
+
+.grid-align-center {
+    align-items: center;
+}
+
+/********************/
+/*      wrapper     */
+/********************/
+.wrapper {
+    margin: 0 auto; 
+    text-align: center;
+    width: 800px;
+}
+
+.header-wrapper {
+    margin: 0 auto; 
+    text-align: center;
+    width: 95%;
+}
+
+.header-under-wrapper {
+    margin: 0 auto; 
+    padding-top: 0.5%;
+    grid-template-columns: repeat(12, 1fr) 1.5fr;
+    width: 95%;
+}
+
+.calender-wrapper {
+    margin: 0 auto;
+    width: 55%;
+}
+
+.time-range-calender-wrapper {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.reserve-info-input-wrapper,
+.reserve-confirm-wrapper,
+.reserve-update-wrapper,
+.reserve-update-success-wrapper,
+.reserve-delete-wrapper {
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+}
+
+.reserve-condition-wrapper {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+/****************************/
+/*      エラーメッセージ     */
+/***************************/
+.err-msg {
+    color: red;
+}
+
+.alert-msg {
+    color: red;
+    font-weight: bold;
+}
+
+/*******************/
+/*      ボタン     */
+/*******************/
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ページ遷移・確定ボタン   デフォルト設定 */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.action-btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 24px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+.action-btn:hover {
+    opacity: 0.9;
+}
+
+/* 動作別カラー */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.btn-color-denger {
+    background-color: red;
+    color: white;
+}
+
+.btn-color-confirm {
+    background-color: rgb(46, 153, 46);
+    color: white;
+}
+
+.btn-color-backpage {
+    background-color: rgb(77, 84, 84);
+    color: white;
+}
+
+.btn-color-next {
+    background-color: rgb(87, 87, 170);
+    color: white;
+}
+
+.btn-color-logout {
+    background-color: rgb(213, 232, 232);
+    color: black;
+    border: 1px solid #cac3c3;
+}
+
+/* ヘッダー・トップページボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.btn-small {
+    padding: 2%;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.btn-big {
+    height: 95%;
+    width: 65%;
+    border-radius: 8px;
+    border: 1px solid;
+    padding-top: 1px;
+}
+
+.btn-hover-opacity:hover {
+    opacity: 0.8;
+}
+
+/*****************/
+/*      画像     */
+/*****************/
+.img-size-50 {
+    width: 50%;
+}
+
+.img-size-60 {
+    width: 60%;
+}
+
+.img-size-middle {
+    width: 80%;
+}
+
+
+
+/***************************/
+/*      アンダーヘッダー    */
+/**************************/
+/* 見出しタイトル  */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.header-under-wrapper__page-title {
+    grid-column: 1/4;
+    width: 100%;
+}
+.header-under-wrapper__page-title > h1 {
+    border-left: 8px solid #FF6666;
+    margin-top: 1%;
+    margin-left: 4%;
+    padding: 2% 0% 1% 2%;
+}
+
+h1.success-msg-h1 {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+/* サブメッセージ */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+p.success-msg {
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+
+/* ユーザ情報・ログアウトボタン */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.header-under-wrapper__user-area {
+    grid-column: 12/14;
+    text-align: center;
+}
+
+/*******************/
+/*      説明文     */
+/******************/
+p.lead-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+
+/**********************/
+/*      エラー関係     */
+/**********************/
+
+/* ログインページ */
+/* ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
+.err-msg {
+    color: red;
+    font-weight: bold;
+}

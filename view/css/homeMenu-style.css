@@ -1,0 +1,57 @@
+/************************/
+/*      トップページ     */
+/************************/
+
+div.to-contentPage-btn-area {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15%;
+}
+
+/* リンク */
+/* ――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.to-contentPage-btn-area_toReservePage {
+    background-color: #FF6666;
+}
+
+div.to-contentPage-btn-area_toReserveConfirmPage {
+    background-color: #66B2FF;
+}
+
+
+div.to-contentPage-btn-area_toReservePage,
+div.to-contentPage-btn-area_toReserveConfirmPage {
+    position: relative;
+    padding: 1%;
+}
+
+div.to-contentPage-btn-area_toReservePage > a,
+div.to-contentPage-btn-area_toReserveConfirmPage > a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+/* 画像 */
+/* ――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.to-contentPage-btn-area_toReservePage > img,
+div.to-contentPage-btn-area_toReserveConfirmPage > img {
+    float: left;
+    position: relative;
+    left: 9%;
+    width: 50%;
+    opacity: 0.5;
+}
+
+/* テキスト */
+/* ――――――――――――――――――――――――――――――――――――――――――――――――――― */
+div.to-contentPage-btn-area_toReservePage > span,
+div.to-contentPage-btn-area_toReserveConfirmPage > span {
+    float: right;
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+}
