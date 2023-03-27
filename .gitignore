@@ -2,4 +2,3 @@
 .htpasswd
 .vscode
 /app/functions/const.php
-.gitignore
